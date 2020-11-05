@@ -9,6 +9,7 @@ router.get('/', function(req, res, next) {
 router.post('/:id', function(req, res, next) {
   postId = req.params.id;
   var newPosts = req.body;
+  newPosts.id = postId;
   posts.push(newPosts)
   res.json(posts);
 });

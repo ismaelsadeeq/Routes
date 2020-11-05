@@ -9,6 +9,7 @@ router.get('/', function(req, res, next) {
 router.post('/:id', function(req, res, next) {
   commentId = req.params.id;
   var newComments = req.body;
+  newComments.id = commentId;
   comments.push(newComment);
   res.json(comments);
 });

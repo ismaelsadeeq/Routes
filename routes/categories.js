@@ -9,6 +9,7 @@ router.get('/', function(req, res, next) {
 router.post('/:id', function(req, res, next) {
   categoryId = req.params.id;
   var newCategories = req.body;
+  newCategories.id = categoryId;
   categories.push(newCategories)
   res.json(categories);
 });

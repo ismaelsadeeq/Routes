@@ -9,6 +9,7 @@ router.get('/', function(req, res, next) {
 router.post('/:id', function(req, res, next) {
   likeId = req.params.id;
   var new_like_unlike = req.body;
+  new_like_unlike.id = likeId;
   like_unlike.push(new_like_unlike);
   res.json(like_unlike);
 });

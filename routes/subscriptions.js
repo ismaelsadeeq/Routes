@@ -9,6 +9,7 @@ router.get('/', function(req, res, next) {
 router.post('/:id', function(req, res, next) {
   subscriptionId = req.params.id;
   var newSubscription = req.body;
+  newSubscription.id = subscriptionId;
   subscriptions.push(newSubscription)
   res.json(subscriptions);
 });
