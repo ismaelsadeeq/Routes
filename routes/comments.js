@@ -3,7 +3,7 @@ var router = express.Router();
 var comments = [{id:1, content:""}]
 
 /* GET comments. */
-router.get('/comments', function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.json(comments);
 });
 router.post('/:id', function(req, res, next) {

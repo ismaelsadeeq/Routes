@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/categories', categoriesRouter);
 app.use('/posts', postsRouter);
 app.use('/comments', commentsRouter);
-app.use('/like_unlie', likeRouter);
+app.use('/like_unlike', likeRouter);
 app.use('/users', usersRouter);
 app.use('/advertisements', advertisementsRouter);
 app.use('/subscriptions', subscriptionsRouter);

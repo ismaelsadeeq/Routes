@@ -3,7 +3,7 @@ var router = express.Router();
 var posts = [{id:1, post:""}]
 
 /* GET posts. */
-router.get('/posts', function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.json(posts);
 });
 router.post('/:id', function(req, res, next) {

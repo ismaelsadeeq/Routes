@@ -3,7 +3,7 @@ var router = express.Router();
 var like_unlike = [{id:1, num:""}]
 
 /* GET like_unlike. */
-router.get('/like_unlike', function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.json(like_unlike);
 });
 router.post('/:id', function(req, res, next) {

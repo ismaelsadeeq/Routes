@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
-var categories = [{id:1, category:""}]
+var categories = [{id:1, category:""}];
 
 /* GET categories. */
-router.get('/categories', function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.json(categories);
 });
 router.post('/:id', function(req, res, next) {
